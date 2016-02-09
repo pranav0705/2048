@@ -15,6 +15,8 @@
 		818D15C21C63312700F39335 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 818D15C01C63312700F39335 /* LaunchScreen.storyboard */; };
 		818D15CD1C63312700F39335 /* _048_gameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 818D15CC1C63312700F39335 /* _048_gameTests.m */; };
 		818D15D81C63312700F39335 /* _048_gameUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 818D15D71C63312700F39335 /* _048_gameUITests.m */; };
+		81E6F4F01C63EC69005A91E0 /* SpeechKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E6F4EF1C63EC69005A91E0 /* SpeechKit.framework */; };
+		81E6F4F21C63ECEF005A91E0 /* SKRecognition.h in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E6F4F11C63ECEF005A91E0 /* SKRecognition.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		818D15D31C63312700F39335 /* 2048_gameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 2048_gameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		818D15D71C63312700F39335 /* _048_gameUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _048_gameUITests.m; sourceTree = "<group>"; };
 		818D15D91C63312700F39335 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81E6F4ED1C63EC51005A91E0 /* SpeechKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SpeechKit.h; path = DragonMobileSDK_2.1.2/SpeechKit.framework/Headers/SpeechKit.h; sourceTree = "<group>"; };
+		81E6F4EF1C63EC69005A91E0 /* SpeechKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpeechKit.framework; path = DragonMobileSDK_2.1.2/SpeechKit.framework; sourceTree = "<group>"; };
+		81E6F4F11C63ECEF005A91E0 /* SKRecognition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SKRecognition.h; path = DragonMobileSDK_2.1.2/SpeechKit.framework/Headers/SKRecognition.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81E6F4F21C63ECEF005A91E0 /* SKRecognition.h in Frameworks */,
+				81E6F4F01C63EC69005A91E0 /* SpeechKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +88,9 @@
 		818D15A61C63312700F39335 = {
 			isa = PBXGroup;
 			children = (
+				81E6F4F11C63ECEF005A91E0 /* SKRecognition.h */,
+				81E6F4EF1C63EC69005A91E0 /* SpeechKit.framework */,
+				81E6F4ED1C63EC51005A91E0 /* SpeechKit.h */,
 				818D15B11C63312700F39335 /* 2048_game */,
 				818D15CB1C63312700F39335 /* 2048_gameTests */,
 				818D15D61C63312700F39335 /* 2048_gameUITests */,
@@ -413,6 +423,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DragonMobileSDK_2.1.2",
+				);
 				INFOPLIST_FILE = 2048_game/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pranav.-048-game";
@@ -424,6 +438,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DragonMobileSDK_2.1.2",
+				);
 				INFOPLIST_FILE = 2048_game/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pranav.-048-game";
@@ -498,6 +516,7 @@
 				818D15DE1C63312700F39335 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		818D15DF1C63312700F39335 /* Build configuration list for PBXNativeTarget "2048_gameTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +525,7 @@
 				818D15E11C63312700F39335 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		818D15E21C63312700F39335 /* Build configuration list for PBXNativeTarget "2048_gameUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +534,7 @@
 				818D15E41C63312700F39335 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
